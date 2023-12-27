@@ -1,0 +1,277 @@
+
+  body {
+    background-image: url(../Img/fondoblu-vert.jpg);
+    background-size: 100%;
+  }
+  
+
+  nav {
+    width: 100%;
+    background-color: #0f0446;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: #0288d3;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  nav a:hover {
+    background-color: #46d6fc;
+    color: #061123;
+  }
+
+  .logo {
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: solid 3px;
+    color: #00ccff;
+    animation: girar 11s infinite linear;
+  }
+
+  @keyframes girar {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+  .textoGrande {
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 80px;
+    text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .contenedor {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 27px;
+    line-height: 6em;
+  }
+
+  /*Eslogan*/
+  .msjBien {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #ff8600;
+    text-shadow: -2px 3px 4px rgb(0 0 0);
+  }
+  /*Imagen carousel*/
+  .imgCarousel {
+    height: 550px;
+  }
+
+  .slide {
+    position: relative;
+    text-align: center;
+    height: 550px;
+  }
+  /*Leyenda carousel*/
+  .texto-superpuesto {
+    position: absolute;
+    top: 47%;
+    left: 28%;
+    transform: translate(-20%, -50%);
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-size: 19px;
+  }
+
+  .contDisciplinas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 8px;
+    justify-content: space-evenly;
+  }
+
+  /*animación voltear*/
+  #voltear {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #voltear:hover {
+    transform: scaleX(-1);
+  }
+
+
+  .contenedor-cajas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+
+  .caja {
+    width: 220px;
+    height: 50px;
+    background-color: #3b5669;
+    box-shadow: -2px 3px 9px 0px #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff8600;
+    text-shadow: -2px 3px 4px rgb(0 0 0);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .caja2 {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff8600;
+    text-shadow: -2px 3px 4px rgb(0 0 0);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .horario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+  }
+
+  .cajaRec {
+    width: 240px;
+    height: 34px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 14px;
+    border: 2px solid #ff8600;
+    border-radius: 6px;
+    letter-spacing: 2px; /*Este comando aumenta el epacio entre letras*/
+    background-color: #3b5669;
+    color: #ff8600;
+    text-shadow: -2px 3px 4px rgb(0 0 0);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .contenedorRostro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  .rostro {
+    border-radius: 150px;
+  }
+  
+  /*Galería de imágenes*/
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imagen {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .imagen:hover {
+    transform: scale(1.3);
+  }
+
+  /*Formulario*/
+  form {
+    max-width: 400px;
+    margin: 68px auto;
+    background-color: #92dcff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 12px;
+    border: 1px solid #0013ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #16b712;
+    color: #1f06ff;
+    padding: 4px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /*Footer*/
+  footer {
+    background-color: #0f0446;
+    color: #0288d3;
+    padding: 55px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /*Redes sociales*/
+  .redes {
+    color: #0013ff;
+    font-size: 40px; 
+  }
+
+  
+   /* Icono WhatsApp */
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-icon img {
+    width: 40px; 
+    height: auto;
+    margin-right: 8px;
+  }
+
+  /*Juani, muchísimas gracias por la prediscposición y la paciencia, en este curso aprendí mucho, espero volvamos a encontrarnos en la próxima etapa. Feliz navidad!! Y que el año nuevo traigo todo lo bueno que necesite. Abrazo Grande!!!*/
